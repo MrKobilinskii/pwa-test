@@ -1,59 +1,789 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>«АДС на 100%» – электронная диспетчерская для УК, ТСЖ и ЖСК / программа для служб ЖКХ</title>
+    <title>«АДС на 100%» – электронная диспетчерская для УК, ТСЖ и ЖСК / программа для служб ЖКХ</title>
 
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-  <link rel="stylesheet" type="text/css" href="src\css\main.css">
+  <link rel="stylesheet" type="text/css" href="src/css/main.css">
 
-  <link rel="stylesheet" type="text/css" href="src\css\all.css">
+    <link rel="stylesheet" type="text/css" href="src/css/all.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;amp;subset=cyrillic" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet" id="wt-sky-css--725574360">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet" id="wt-sky-css--725574360">
 
-  <script src="https://kit.fontawesome.com/8c08a64ea9.js"></script>
+    <script src="https://kit.fontawesome.com/8c08a64ea9.js"></script>
 </head>
 
 <body>
+    
+    <div class="container">
+            <div class="navbar">
+                <img alt="РосКвартал" src="src\images\rk-logo-full.svg" layout="fixed" style="width: 202px; height: 40px;">
 
-<header class="header">
-  <div class="container">
-    <div class="navbar">
-      <img alt="РосКвартал" src="src\images\rk-logo-full.svg" layout="fixed" style="width: 202px; height: 40px;">
+                <button class="navbar-menu-button"> <i class="fas fa-bars"></i> </button>
+            </div>
+    </div> <!-- NavBar -->
 
-      <button class="navbar-menu-button" on="tap:sidebar.toggle" aria-label="Toggle Navbar"> <i class="fas fa-bars"></i> </button>
-    </div>
-  </div>
-</header>
+    <div class="intro">
+        <div class="container">
+            <h1 class="intro-title">
+                АДС на 100% <span style="color: #00527B;">— современная диспетчерская для управляющей организации </span>
+            </h1>
 
-<div class="intro">
+            <h2 class="intro-subtitle">По всем требованиям <u class="add-curve">законов</u> и <u class="add-curve">ГОСТов</u>
+            </h2>
 
-  <div class="container">
-    <h1 class="intro-title">
-      АДС на 100% <span class="intro-colortext-blue">— современная диспетчерская для управляющей организации </span>
-    </h1>
+        </div> 
 
-    <h2 class="intro-subtitle">По всем требованиям <span class="intro-colortext-gold">законов</span> и <span class="intro-colortext-gold">ГОСТов</span></h2>
+		<div style="text-align: right;">
+			<img class="display-img" src="src\images\picture-cartoon.svg">
+		</div>
 
-  </div>
+    	<div class="container">
+	        <p class="intro-subtitle-2">
+	            Готовое решение для автоматизации приёма и обработки обращений жителей МКД в аварийно-диспетчерскую службу. 
+	        </p>
 
-  <div class="img_container">
-    <img src="src\images\Slice.svg" style="width: 100%; height: 329px; ">
-  </div>
+	        <a class="btn" href="#">Попробовать бесплатно</a>
+    	</div>
 
-  <div class="container">
-    <h1 class="intro-subtitle-2">
-      Готовое решение для автоматизации приёма и обработки обращений жителей МКД в аварийно-диспетчерскую службу.
-    </h1>
+    </div> <!-- Intro -->
 
-    <a class="btn" href="#">Попробовать бесплатно</a>
-  </div>
-</div>
+	
 
+    <div class="info">
+        <div class="container" style="margin-bottom: 10px;">
+            <div class="info-title">
+                «В сервис «АДС на 100%» мы включили все возможности традиционных систем для ПК и дополнили их современными инструментами. Это позволяет сервису совершенствовать работу управляющей организации любого размера.
+	                <mark style="background-color: #FFDA7A; color: var(--color-black);">
+		                Вы сможете отказаться от устаревших программ
+		                и бумажных журналов, сэкономить на автоматизации, увеличить эффективность обслуживания жителей,
+		                и привлечь больше клиентов»
+	            	</mark> 
+            </div>
+        </div>
+
+        <!-- Photo -->
+        <div style=" text-align: right;"> 
+        	<div style="position: relative; display: inline-block;">
+        		<img class="display-img" src="src/images/photo.png">
+
+  				<div class="info-text-container">
+  					<h2>
+  						Валит Борис
+  					</h2>
+						
+  					<h3>
+  						Руководитель интернет-службы РосКвартал
+  					</h3>
+  				</div>
+  			</div>
+		</div>
+
+        
+    </div> <!-- Info -->
+
+
+        <div class="price">
+
+	        <div class="container" style="margin-bottom: 25px;">
+	            <div class="price-title">
+	            	Самое приятное в сервисе «АДС на 100%» – это его цена
+	            </div>
+
+	            <div class="price-subtitle" style="text-align: center;">
+	            	Узнайте, сколько будет стоить один месяц доступа к сервису для вашей управляющей организации
+	            </div>
+	        </div>
+
+	        <div class="calc-container" style="margin-bottom: 25px;">
+	        	<div class="price-column">
+	        		<div class="price-dig">
+	        			<span class="price-dig-blue">
+	        			1900
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div>
+	        		
+	        		<div class="price-subtitle">
+	        			Фиксированная <br>сумма
+	        		</div>
+	        	</div>
+
+	        	<div class="price-sign">
+	        		<img src="src\images\pluse.png" style="width: 23px; height: 23px;">
+	        	</div>
+
+	        	<div class="price-column">
+	        		<div class="price-dig">
+	        			<span class="price-dig-blue">
+	        			40
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div>
+	        		
+	        		<div class="price-subtitle">
+	        			Цена за <br>1 дом
+	        		</div>
+	        	</div>
+
+	        	<div class="price-column">
+	        		<input class="price-input" type="number" value="1" min="1"> <!-- Ввод - количество домов -->
+	        		
+	        		<div class="price-subtitle">
+	        			<span class="colortext-gold">Укажите </span><br>кол-во домов
+	        		</div>
+	        	</div>
+
+	        	<div class="price-sign">
+	        		<img src="src\images\equale.png" style="width: 25px; height: 15px;">
+	        	</div>
+
+	        	<div class="price-column" style="margin-top: 22px;">									 
+	        		<div class="price-dig" style="color: #23B39A;">
+	        		<span class="price-dig-blue">
+	        			 50 000
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div> <!-- Итого -->
+	        	</div>
+
+	        </div> 
+
+	        <div class="container">
+	        	<a class="btn" href="#" style="margin-bottom: 14px;">Попробовать бесплатно</a>
+	        	
+	        	<div class="price-subtitle-2">
+	        		Попробуйте все возможности платформы РосКвартал
+					<span class="colortext-gold">бесплатно в течение 30 дней</span>
+	        	</div>
+	        </div>
+    </div> <!-- Price -->
+
+
+    <div class="nomenclature">
+    	<div class="container">
+    		<div class="price-title" style="margin-bottom: 20px;">
+    			В электронной диспетчерской
+				<span class="colortext-gold">есть всё</span>, что вам нужно для работы
+    		</div>
+    		<div class="nomenclature-subtitle">
+    			Сервис «АДС на 100%» – это сайт в интернете. Его не нужно устанавливать на компьютер. Работать с ним вы сможете из любой удобной точки через браузер.
+    		</div>
+    	</div>
+
+    	<div style="text-align: right;">
+    		<img class="display-img" src="src/images/computer.png">
+    	</div>
+
+    	<div class="container">
+    		<ul class="nomenclature-list" style="list-style-image: url(src/images/bullet.svg);">
+    			<li>
+    				Работа с заявками и жалобами жителей МКД 				
+    			</li>
+    			<li>
+    				Электронный журнал заявок и аварийных отключений
+    			</li>
+    			<li>
+    				Передача заявок исполнителям
+    			</li>
+    			<li>
+    				Работа с обращениями граждан и юрлиц
+    			</li>
+    			<li>
+    				Планирование рабочего дня/недели/месяца
+    			<li>
+					Разграничение прав и полномочий
+    			</li>
+    			<li>
+    				Контроль исполнения заявок
+    			</li>
+    			<li>
+    				Работа с заявками и жалобами жителей МКД
+    			</li>
+    			<li>
+    				Современная цифровая телефония
+    			</li>
+    			<li>
+    				Учёт установленного оборудования
+    			</li>
+    			<li>
+    				Учёт установленного оборудования
+    			</li>
+    			<li>
+    				Аналитические отчёты
+    			</li>
+    			<li>
+					Распечатываемые документы и отчёты	
+    			</li>
+    		</ul>
+    	</div> <!-- Nomenclature -->
+
+	</div> <!-- Nomenclature-->
+
+    <div class="price">
+
+	        <div class="container" style="margin-bottom: 25px;">
+	            <div class="price-title">
+	            	Самое приятное в сервисе «АДС на 100%» – это его цена
+	            </div>
+
+	            <div class="price-subtitle" style="text-align: center;">
+	            	Узнайте, сколько будет стоить один месяц доступа к сервису для вашей управляющей организации
+	            </div>
+	        </div>
+
+	        <div class="calc-container" style="margin-bottom: 25px;">
+	        	<div class="price-column">
+	        		<div class="price-dig">
+	        			<span class="price-dig-blue">
+	        			1900
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div>
+	        		
+	        		<div class="price-subtitle">
+	        			Фиксированная <br>сумма
+	        		</div>
+	        	</div>
+
+	        	<div class="price-sign">
+	        		<img src="src\images\pluse.png" style="width: 23px; height: 23px;">
+	        	</div>
+
+	        	<div class="price-column">
+	        		<div class="price-dig">
+	        			<span class="price-dig-blue">
+	        			40
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div>
+	        		
+	        		<div class="price-subtitle">
+	        			Цена за <br>1 дом
+	        		</div>
+	        	</div>
+
+	        	<div class="price-column">
+	        		<input class="price-input" type="number" value="1" min="1"> <!-- Ввод - количество домов -->
+	        		
+	        		<div class="price-subtitle">
+	        			<span class="colortext-gold">Укажите </span><br>кол-во домов
+	        		</div>
+	        	</div>
+
+	        	<div class="price-sign">
+	        		<img src="src\images\equale.png" style="width: 25px; height: 15px;">
+	        	</div>
+
+	        	<div class="price-column" style="margin-top: 22px;">									 
+	        		<div class="price-dig" style="color: #23B39A;">
+	        		<span class="price-dig-blue">
+	        			 50 000
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div> <!-- Итого -->
+	        	</div>
+
+	        </div> 
+
+	        <div class="container">
+	        	<a class="btn" href="#" style="margin-bottom: 14px;">Попробовать бесплатно</a>
+	        	
+	        	<div class="price-subtitle-2">
+	        		Попробуйте все возможности платформы РосКвартал
+					<span class="colortext-gold">бесплатно в течение 30 дней</span>
+	        	</div>
+	        </div>
+    </div> <!-- Price -->
+    
+
+    <div class="long">
+    	<div class="container" style="margin-bottom: 70px;">
+    		<div class="price-title" style="margin-bottom: 35px;">
+    			Легкая интеграция, доступная <span class="colortext-gold">каждому</span>
+    		</div>
+
+    		<div class="long-subtitle">
+    			В сервисе «АДС на 100%» настроен автоматический обмен данными с ГИС ЖКХ, вашим сайтом, 1С и другими программами. Информация не потеряется, а вам не придётся размещать её несколько раз на разных ресурсах.
+    		</div>
+    	</div>
+
+    	<div>
+    		<fieldset class="fieldset">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						Интеграция<br> ГИС ЖКХ
+					</h3>
+				</legend>
+				<ul class="fieldset-list">
+					<li class="long-subtitle">
+						<img src="src/images/vector/house.svg">
+						<div>
+							Загрузка информации о домах и помещениях
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/settings.svg">
+						<div>
+							Загрузка информации об установленных приборах учета
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/person.svg">
+						<div>
+							Загрузка информации о собственниках
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/download.svg">
+						<div>
+							Выгрузка информации об обращениях жителей
+						</div>
+					</li>
+					<li>
+						<a href="#" class="btn" style="width: 241px; font-size: 12px; margin-bottom: 0;"> Попробовать бесплатно </a>
+					</li>
+				</ul>
+		</fieldset>
+    	</div>
+
+    	<div>
+    		<fieldset class="fieldset">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						Сайт для<br> организации
+					</h3>
+				</legend>
+				<ul class="fieldset-list">
+					<li class="long-subtitle">
+						<img src="src/images/vector/page.svg">
+						<div>
+							Неважно, на каком движке сделан ваш сайт. Интеграция происходит путём вставки одного скрипта
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<div>
+							Встраиваемый на ваш сайт виджет, с помощью которого жители дома смогут отправлять вам заявки, обращения и показания приборов учёта
+						</div>
+					</li>
+				</ul>
+		</fieldset>
+    	</div>
+
+
+       	<div>
+    		<fieldset class="fieldset">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						1С и другие<br> программы
+					</h3>
+				</legend>
+				<ul class="fieldset-list">
+					<li class="long-subtitle">
+						<img src="src/images/vector/1c.svg">
+						<div>
+							Выгрузка в 1С данных об остатках на складах и списании материалов
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/person.svg">
+						<div>
+							Загрузка данных о должниках
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/1c_advanced.svg">
+						<div>
+							Настраиваемый обмен данными через дополнительные обработки для 1С
+						</div>
+					</li>
+		</fieldset>
+    	</div>
+
+    	<div>
+    		<fieldset class="fieldset">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						Мы гарантируем, что сервис
+					</h3>
+				</legend>
+				<ul class="fieldset-list" style="justify-content: flex-start;">
+					<li class="long-subtitle">
+						<h2 class="fieldset-title colortext-gold">
+							Соответствует закону
+						</h2>
+
+						<p>
+							Сервис соответствует требованиям <span class="colortext-gold"> законов</span> и <span class="colortext-gold">ГОСТов</span> Мы следим за изменениями в законодательстве и при необходимости обновляем функционал
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<h2 class="fieldset-title colortext-gold">
+							Защищает персональные данные
+						</h2>
+
+						<p style="">
+							Защищаем персональные данные согласно № 152-ФЗ, не сообщаем их никому вне РосКвартала
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<h2 class="fieldset-title colortext-gold">
+							Надёжно хранит данные
+						</h2>
+
+						<p>
+							“Облачные” данные не потеряются<br>Каждый день делается двойной бэкап всех данных по вашей организации
+						</p>
+					</li>
+		</fieldset>
+    	</div>
+
+    	<div>
+    		<fieldset class="fieldset">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						Гарантии вашей безопасности, закреплённые в договоре
+					</h3>
+				</legend>
+				<ul class="fieldset-list" style="justify-content: flex-start;">
+					<li class="long-subtitle">
+						<p>
+							Мы гарантируем бесперебойную и качественную работу сервиса. Его уже протестировали <b>79 управляющих организаций</b>, они довольны приятным интерфейсом и функциональностью – здесь всё необходимое для работы. 
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p>
+							Мы уверены, что вы быстро во всём разберётесь. А если возникнут вопросы, техподдержка придёт на помощь.
+						</p>
+					</li>
+		</fieldset>
+    	</div> <!-- Гарантии вашей безопасности, закреплённые в договоре -->
+
+    	<div>
+    		<fieldset class="fieldset">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						Развертывание системы
+					</h3>
+				</legend>
+				<ul class="fieldset-list" style="justify-content: flex-start;">
+					<li class="long-subtitle">
+						<p>
+							Использование сервиса предоставляется по схеме «ПО как услуга». Развёртывание ПО происходит на серверах, арендуемых РосКварталом, обеспечивается их <span class="colortext-gold"> круглосуточная бесперебойная работа</span>. Обновления системы выходят минимум 2 раза в месяц, они полностью совместимы с предыдущими версиями. 
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p>
+							Мы уверены, что вы быстро во всём разберётесь. А если возникнут вопросы, техподдержка придёт на помощь.
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/server.svg">
+					</li>
+		</fieldset>
+    	</div>
+
+		<div>
+    		<fieldset class="fieldset">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						Техническая поддержка
+					</h3>
+				</legend>
+				<ul class="fieldset-list" style="justify-content: flex-start;">
+					<li class="long-subtitle">
+						<p>
+							Наша техподдержка всегда на связи. На поступившие запросы <span class="colortext-gold">мы отвечаем в рабочее время с понедельника по пятницу с 9:00 до 18:00</span> (МСК).<br> Каждому запросу присваиваем приоритет, это позволяет нам в первую очередь отвечать на важные и срочные заявки.
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p class="zipper-box">
+							<img src="src/images/vector/zipper_full.svg">
+							<img src="src/images/vector/zipper_full.svg">
+							<img src="src/images/vector/zipper_full.svg">
+						</p>
+						<p>
+							<b>Высокий приоритет</b><br>
+							2 часа<br><br>
+							В системе что-то сломалось, и вы не можете ею воспользоваться
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p class="zipper-box">
+							<img src="src/images/vector/zipper.svg">
+							<img src="src/images/vector/zipper_full.svg">
+							<img src="src/images/vector/zipper_full.svg">
+						</p>
+						<p>
+							<b>Средний приоритет</b><br> 4 часа<br><br>
+							Нарушено функционирование системы
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p class="zipper-box">
+							<img src="src/images/vector/zipper.svg">
+							<img src="src/images/vector/zipper.svg">
+							<img src="src/images/vector/zipper_full.svg">
+						</p>
+						<p>
+							<b>Низкий приоритет</b> <br>8 часов<br><br>
+							Запрос связан с оказанием дополнительного объёма услуг по настройке или модификации системы
+						</p>
+					</li>
+			</fieldset>
+    	</div>
+
+    	<div>
+    		<fieldset class="fieldset">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						Безопасность системы
+					</h3>
+				</legend>
+				<ul class="fieldset-list" style="justify-content: flex-start;">
+					<li class="long-subtitle">
+						<p>
+							<b>Мы разработали сервис на современных технологиях компании Microsoft</b> (ASP.NET, C# 7, Entity Framework), поэтому он надёжный и быстрый.
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p>
+							Сервис «АДС на 100%» и обрабатываемые им данные размещаются «в облаке», которое предоставляется нашим партнёром, <b>провайдером ИТ-инфраструктуры компанией Selectel</b> (https://selectel.ru/). 
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p>
+							Selectel размещает оборудование в своих дата-центрах, защищённых от внешнего вторжения. Сеть насчитывает 7 современных дата-центров в Москве, Санкт-Петербурге и Ленинградской области.
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p>
+							Инфраструктура Selectel прошла аттестацию на соответствие требованиям безопасности информации ФСТЭК/ФСБ, сертификацию PCI DSS. Все соединения пользователей с сервером проходят по шифрованным каналам (HTTPS).
+						</p>
+					</li>
+					<li class="long-subtitle">
+						<p>
+							По желанию управляющей организации может быть включена двухфакторная аутентификация для входа в служебные интерфейсы для сотрудников компании (диспетчеры, операторы), которые имеют доступ к информации о жителях.
+						</p>
+					</li>
+
+					<li>
+						<img src="src/images/piar/microsoft.png">
+						<h1 class="long-subtitle">
+							Технологии корпорации Microsoft
+						</h1>
+					</li>
+					<li>
+						<img src="src/images/piar/sele.png">
+						<h1 class="long-subtitle">
+							Провайдер IT-инфраструктуры Selectel
+						</h1>
+					</li>
+					<li>
+						<img src="src/images/piar/pci.png">
+						<h1 class="long-subtitle">
+							Инфраструктура прошла сертификацию по стандарту безопасности PCI DSS 
+						</h1>
+					</li>
+					<li>
+						<img src="src/images/piar/fcb.png">
+						<h1 class="long-subtitle">
+							Соответствие провайдера требованиям ФСТЭК/ФСБ
+						</h1>
+					</li>
+					<li>
+						<img src="src/images/piar/paper1.png">
+						<h1 class="long-subtitle">
+							ТСертификат Selectel
+						</h1>
+					</li>
+					<li>
+						<img src="src/images/piar/paper2.png">
+						<h1 class="long-subtitle">
+							ТЛицензия РосКвартала
+						</h1>
+					</li>
+					<li>
+						<img src="src/images/piar/paper3.png">
+						<h1 class="long-subtitle" style="margin-bottom: 0;">
+							Патент РосКвартала
+						</h1>
+					</li>
+		</fieldset>
+    	</div>
+
+    	<div>
+    		<fieldset class="fieldset" style="margin-bottom: 0;">
+				<legend class="fieldset-title" align="left">
+					<h3>
+						Наша команда
+					</h3>
+				</legend>
+				<ul class="fieldset-list" style="justify-content: flex-start;">
+					<li class="long-subtitle">
+						<img src="src/images/vector/book.svg">
+						<div>
+							Проведёт <b>тренинги по использованию системы</b> для группы в 10-15 человек. Тренинги будут полезны диспетчерам, инженерам, руководству заказчика
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/1c.svg">
+						<div>
+							<b>Выполнит интеграцию</b> с информационными системами (1С, телефония, СКУД, системы управления парковочным пространством)
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/picture.svg">
+						<div>
+							<b>Подготовит макеты рекламных материалов</b> для привлечения жителей домов в сервис
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/star.svg">
+						<div>
+							<b>Поможет организовать</b> промомероприятие
+						</div>
+					</li>
+					<li class="long-subtitle">
+						<img src="src/images/vector/eye.svg">
+						<div>
+							<b>Обеспечит бесперебойную работу сервиса и круглосуточное взаимодействие с клиентами</b> и другими пользователями сервиса
+						</div>
+					</li>
+			</fieldset>
+    	</div> 
+
+    </div>	<!-- Long block -->
+
+    <div class="price" style="background-color: #fff;">
+
+	        <div class="container" style="margin-bottom: 25px;">
+	            <div class="price-title">
+	            	Самое приятное в сервисе «АДС на 100%» – это его цена
+	            </div>
+
+	            <div class="price-subtitle" style="text-align: center;">
+	            	Узнайте, сколько будет стоить один месяц доступа к сервису для вашей управляющей организации
+	            </div>
+	        </div>
+
+	        <div class="calc-container" style="margin-bottom: 25px;">
+	        	<div class="price-column">
+	        		<div class="price-dig">
+	        			<span class="price-dig-blue">
+	        			1900
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div>
+	        		
+	        		<div class="price-subtitle">
+	        			Фиксированная <br>сумма
+	        		</div>
+	        	</div>
+
+	        	<div class="price-sign">
+	        		<img src="src\images\pluse.png" style="width: 23px; height: 23px;">
+	        	</div>
+
+	        	<div class="price-column">
+	        		<div class="price-dig">
+	        			<span class="price-dig-blue">
+	        			40
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div>
+	        		
+	        		<div class="price-subtitle">
+	        			Цена за <br>1 дом
+	        		</div>
+	        	</div>
+
+	        	<div class="price-column">
+	        		<input class="price-input" type="number" value="1" min="1"> <!-- Ввод - количество домов -->
+	        		
+	        		<div class="price-subtitle">
+	        			<span class="colortext-gold">Укажите </span><br>кол-во домов
+	        		</div>
+	        	</div>
+
+	        	<div class="price-sign">
+	        		<img src="src\images\equale.png" style="width: 25px; height: 15px;">
+	        	</div>
+
+	        	<div class="price-column" style="margin-top: 22px;">									 
+	        		<div class="price-dig" style="color: #23B39A;">
+	        		<span class="price-dig-blue">
+	        			 50 000
+	        		</span>
+
+	        		<span class="price-rub-blue">
+	        			руб.
+	        		</span>
+	        		</div> <!-- Итого -->
+	        	</div>
+
+	        </div> 
+
+	        <div class="container">
+	        	<a class="btn" href="#" style="margin-bottom: 14px;">Попробовать бесплатно</a>
+	        	
+	        	<div class="price-subtitle-2">
+	        		Попробуйте все возможности платформы РосКвартал
+					<span class="colortext-gold">бесплатно в течение 30 дней</span>
+	        	</div>
+	        </div>
+    </div> <!-- Price -->
+
+    <footer class="footer">
+    	<div class="container" style="margin-bottom: 38px;">
+    		<div style="margin-bottom: 15px;">
+    			Наши клиенты
+    		</div>
+    		<p class="footer-text" style="margin-bottom: 30px;">
+    			Каждый день мы помогаем более 2000 управляющим компаниям и ТСЖ со всей России выполнять требование закона о ГИС ЖКХ и избегать штрафов.
+    		</p>
+    		<p class="footer-text colortext-gold" style="margin-bottom: 30px;">
+    			<b>Будем рады помочь и Вам!</b>
+    		</p>
+
+    		<a class="btn" href="#" style="font-weight: 600; font-size: 23px; line-height: 28px;">8 800 500-65-61</a>
+    	</div>
+
+    	<div class="container">
+    		<div data-component="map">
+    			<iframe src="https://www.google.com/maps/d/embed?mid=zSld2kWacU6I.kxhUnSzV_fuA" class="map" title="Клиенты РосКвартала"style="border: none;"></iframe>
+    		</div>
+    	</div>
+    </footer>
 </body>
 </html>

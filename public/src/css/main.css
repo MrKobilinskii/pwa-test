@@ -11,94 +11,134 @@ body {
     color: #00527B;
 }
 
+:root {
+    --color-blue: #00527B;
+    --color-red: #FF1A31;
+    --color-gold: #FF931A;
+    --color-black: #333333;
+    --color-grey: #EAF1F6;
+}
+
 *,
 *:before, *:after {
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
 
 /* Contianer */
 .container {
     width: 100%;
-    max-width: 274px;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 0 5%;
 }
 
-.img_container {
+
+.display-img {
     width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
+    max-width: 450px;
+}
+
+/* Nav */
+.navbar {
+            z-index: 1000;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            display: flex;
+            min-height: 64px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            background-color: #fff;
+            box-shadow: 0 1px 6px 0 rgba(0,0,0,0.14);
+}
+
+.navbar-menu-button {
+            display: flex;
+            height: 16px;
+            width: 16px;
+
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            font-size: 1rem;
+            color: var(--color-black);
+            outline:none;
 }
 
 /* Intro */
 
 .intro {
-    width: 100%;
-    height: 924px;
     background-color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 64px;
 }
 
 .intro-title {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 800;
     font-size: 26px;
     line-height: 35px;
     text-align: left;
+    margin-top: 31px;
 
-    margin-top: 48px;
     margin-bottom: 18px;
 
-    color: #FF1A31;
+    color: var(--color-red);
+}
+
+.add-curve {
+    color: var(--color-gold);
+    position: relative;
+    text-decoration: none;
+}
+
+
+.add-curve:after {
+    content: "";
+    background-image: url(https://roskvartal-a.akamaihd.net/Dispatch/Landing/wave.svg);
+    background-repeat: repeat-x;
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -8px;
 }
 
 .intro-subtitle {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
     text-align: left;
     margin-bottom: 18px;
 
-    color: #00527B;
 }
 
 .intro-subtitle-2 {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 21px;
     text-align: left;
 
-    margin-top: 18px;
+    margin-top: 18px; 
     margin-bottom: 33px;
 
-    color: #333333;
+    color: var(--color-black);
 }
 
-.intro-colortext-blue {
-    color: #00527B; /* Синий цвет выделения */
-}
-
-.intro-colortext-gold {
-    color: #FF931A; /* Золотой цвет выделения */
+.colortext-gold {
+     color: #FF931A; /* Золотой цвет выделения */
 }
 
 .btn {
-    width: 274px;
+    width: 270px;
     height: 52px;
-    margin-bottom: 27px;
+    margin: 0 auto 27px;
 
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -109,6 +149,7 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     justify-content: center;
 
+
     text-decoration: none;
 
     color: #FFFFFF;
@@ -118,50 +159,263 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 6px;
 }
 
-/* Header */
+/* Info */
 
-header {
-    width: 100%;
+.info {
+    background: #EFF3F6;
+    padding-top: 33px;
+
+    color: var(--color-black);
+}
+
+.info-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 182.85%;
+    text-align: left;
+}
+
+figure {
+    width: 100%; /* Ширина области */
+    height: 100%; /* Высота области */
+    margin: 0; /* Обнуляем отступы */
+    overflow: hidden; /* Прячем всё за пределами */
+    min-width: 600px; /* Минимальная ширина */
+
+    position: relative;
+}
+
+.info-text-container {
+    width: 155px;
+    height: 81px;
 
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000
+    top: 9%;
+    left: 7%;
+    z-index: 1;
+    text-align: left;
+
 }
 
-/* Nav */
-.navbar {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    min-height: 64px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-    background-color: #fff;
-    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.14);
+.info-text-container h2 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 27px;
+    text-transform: uppercase;
+
+    margin-bottom: 9px;
 }
 
-.navbar-menu-button {
-    display: flex;
-    height: 16px;
-    width: 16px;
+.info-text-container h3 {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
 
-    align-items: center;
+}
+
+/* Price */
+
+.price {
+    background-color: #F5F8F9;
+
+    padding-top: 18px;
+    padding-bottom: 46px;
+}
+
+.price-title {
+    margin-bottom:  14px;
+}
+
+.price-subtitle {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: left;
+
+    margin-left: 3px;
+}
+
+.calc-container {
+    max-width: 670px;
+    display: flex;
+    flex-flow: wrap;
     justify-content: center;
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-    color: #333;
+
+    margin: 0 3.5%;
+    margin-top: -10px; 
 }
 
-main {
-    margin-top: 64px;
+.price-column {
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-main h1 {
-    margin-top: 30px;
+.price-dig-blue {
+    font-size: 28px;
+    line-height: 34px;
+
+}
+
+.price-rub-blue {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.price-sign {
+    color: #CCDAE5;
+    margin-top: 24px;
+    margin-right: 10px;
+}
+
+.price-subtitle-2 {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+
+}
+
+.price-input {
+    width: 100px;
+
+    font-size: 28px;
+    line-height: 158.47%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-blue);
+    text-align: center;
+
+    background: #FFFFFF;
+    border: 3px solid #FF931A;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline:none;
+    overflow: hidden;
+
+}
+
+/* Nomenclature */
+
+.nomenclature {
+    padding-top: 29px;
+}
+
+.nomenclature-subtitle {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: var(--color-black);
+}
+
+.nomenclature-list {
+    margin-right: 53px;
+    padding-left: 23px;
+    margin-top: 20px;
+    margin-bottom: 73px;
+
+    position: relative;
+}
+
+.nomenclature-list li {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 10px;
+
+    color: var(--color-gold);
+}
+
+.nomenclature-list li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    
+    background-color: var(--color-grey);
+}
+
+/* Long Block */
+
+.long {
+    background-color: var(--color-grey);
+    width: 100%;
+    padding: 49px 4% 38px;
+}
+
+.long-subtitle {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.long-subtitle img, h1, h2 {
+    margin-bottom: 20px;
+}
+
+.long-subtitle p, h2 {
+    text-align: left;
+}
+
+.fieldset {
+    border: 2px solid #D0DEE8;
+    border-radius: 20px;
+    margin-bottom: 70px;
+}
+
+legend h3 {
+    margin-top: -30px;
+}
+
+.fieldset-title {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.fieldset-list {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.fieldset-list li:last-child {
+    margin-bottom: 10px;
+}
+
+
+.zipper-box img {
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+.footer {
+    text-align: left;
+    padding-top: 40px;
+
+    background-color: var(--color-grey);
+}
+
+.footer-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.map {
+    width: 94%;
+    margin: 0 3%;
+    height: 430px;
 }
